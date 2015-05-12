@@ -1,4 +1,11 @@
 ﻿@font-face {
+	font-family: 'ExnessIcons';
+	src: url('fonts/ExnessIcons.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
 	font-family: 'BebasNeueRegular';
 	src: url('fonts/BebasNeue_regular.ttf') format('truetype');
 	font-weight: normal;

@@ -3,7 +3,7 @@
 	padding: 0;
 }
 .wrap {
-	width:100%;
+	width: 100%;
 	margin: 0 auto;
 	transition: all ease 0.3s;
 }
@@ -15,6 +15,7 @@
     background-repeat: no-repeat;
     background-position: center center;
 	width: 100%;
+	height: 640px;
 	transition: all ease 0.3s;
 	position: relative;
 }
@@ -22,11 +23,121 @@
 	background: url(decals/logo.svg) no-repeat top left;
 	background-size: contain;
 	position: absolute;
-	left: 24px;
-	top: 24px;
+	left: 56px;
+	top: 48px;
 	width: 104px;
 	height: 56px;
+	transition: all ease 0.3s;
+	cursor: pointer;
 } 
+.header__donate {
+	width: 270px;
+	height: 72px;
+	background-color: #FFCF00;
+	position: absolute;
+	left: 56px;
+	bottom: 64px;
+	font: 400 11px/16px CirceWebRegular,sans-serif;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	line-height: 72px;
+	padding-left: 34px;
+	transition: all ease 0.3s;
+	cursor: pointer;
+}
+.header__donate__mark {
+	width: 24px;
+	height: 24px;
+	float: right;
+	position: relative;
+	background-image: url("decals/Arrow Copy 2.png");
+	top: 23px;
+	right: 23px;
+	-moz-transform: rotate(180deg);
+	-ms-transform: rotate(180deg);
+	-webkit-transform: rotate(180deg);
+	transform: rotate(180deg);
+	transition: all ease 0.3s;
+}
+.header__donate:hover .header__donate__mark {
+	-moz-transform: rotate(540deg);
+	-ms-transform: rotate(540deg);
+	-webkit-transform: rotate(540deg);
+	transform: rotate(540deg);
+}
+
+
+.header__menu {
+	position:absolute;
+	right: 56px;
+	top: 61px;
+	width: 180px;
+}
+.header__menu__language {
+	float: left;
+	color: lightgray;
+	transition: all ease 0.3s;
+	cursor: pointer;
+}
+.header__menu__language:hover {
+	color: white;
+}
+.language__text {
+	font: 400 11px/16px CirceWebRegular,sans-serif;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	height: 24px;
+	top: -3px;
+	position: relative;
+}
+.language__mark {
+	width: 24px;
+	height: 24px;
+	font-family: ExnessIcons;
+	speak: none;
+	font-style: normal;
+	font-weight: 400;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+.language__mark:before {
+	box-sizing: border-box;
+	content: "\e602";
+}
+.header__menu__home {
+	height: 24px;
+	float: right;
+	font: 400 10px/16px CirceWebRegular,sans-serif;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+}
+.header__menu__home > a {
+	color: #ffcf00;
+	text-decoration: none;
+}
+.header__menu__home > a:hover {
+	color: lightgray;
+	text-decoration: none;
+}
+.header__caption {
+	top: 251px;
+	left: 56px;
+	position:absolute;
+	font-family: CirceWebExtraLight,sans-serif;
+}
+.header__caption1 {
+	font-size: 66px;
+	color: #FFFFFF;
+	line-height: 110%;
+}
+.header__caption2 {
+	font-size: 30px;
+	color: #D2D2D2;
+	line-height: 134%;
+}
 
 
 
@@ -46,8 +157,7 @@
 	width: 200px;
 	-moz-transform: rotate(270deg);
     -ms-transform: rotate(270deg);
-    -webkit-transform: rotate(270deg); 
-    -o-transform: rotate(270deg);
+    -webkit-transform: rotate(270deg);
     transform: rotate(270deg);
 	position: absolute;
 	left: -50px;
@@ -75,12 +185,133 @@
 	margin: 100px 0;
 }
 
-.systems {
+.register {
 	background-color: #FFF;
 	width:100%;
-	min-height: 200px;
+	height: 680px;
+	position: relative;
 }
-
+.register__caption {
+	font: 800 40px/120% CirceWebBold,sans-serif;
+	text-align: center;
+	margin: 40px auto;
+}
+.register__systems {
+	width: 890px;
+	height: 100px;
+	margin: 0 auto;
+	transition: all ease 0.3s;
+}
+.register__systems__logo {
+	width: 171px;
+	height: 66px;
+	float: left;
+	background-repeat:no-repeat;
+	background-size: contain;
+	margin: 35px 25px;
+	transition: all ease 0.3s;
+}
+.register__systems__logo.cash { background-image: url(decals/icon-ps-cash.png); }
+.register__systems__logo.fp { background-image: url(decals/icon-ps-fp.png); }
+.register__systems__logo.net { background-image: url(decals/icon-ps-net.png); }
+.register__systems__logo.pm { background-image: url(decals/icon-ps-pm.png); }
+.register__systems__logo.pw { background-image: url(decals/icon-ps-pw.png); }
+.register__systems__logo.uk { background-image: url(decals/icon-ps-uk.png); }
+.register__systems__logo.visa { background-image: url(decals/icon-ps-visa.png); }
+.register__systems__logo.wm { background-image: url(decals/icon-ps-wm.png); }
+.register__systems__gallery {  }
+.register__form {
+	position: relative;
+	height: 100px;
+	width: 1012px;
+	margin: 0 auto;
+	top: 40px;
+	transition: all ease 0.3s;
+}
+.register__form input {
+	outline-style:none;
+	box-shadow:none;
+	border-color:transparent;
+	width: 80%;
+	margin-left: 25px;
+	height: 90%;
+	font: 400 15px/23px CirceWebRegular, sans-serif;
+}
+.register__form__phone {
+	border: solid 1px #DEDEDE;
+	width: 328px;
+	height: 72px;
+	bottom: 0px;
+	background-color: #FFF;
+	float: left;
+	margin: 8px;
+	transition: all ease 0.3s;
+}
+.register__form__phone__example  {
+	color: #9B9B9B;
+	font: 400 11px/146% CirceWebRegular, sans-serif;
+	margin: 15px 0 0 25px;
+}
+.register__form__email {
+	border: solid 1px #DEDEDE;;
+	width: 328px;
+	height: 72px;
+	bottom: 0px;
+	background-color: #FFF;
+	float: left;
+	margin: 8px;
+	transition: all ease 0.3s;
+}
+.register__form__submit {
+	width: 270px;
+	height: 72px;
+	background-color: #FFCF00;
+	left: 56px;
+	bottom: 0px;
+	font: 400 11px/16px CirceWebRegular,sans-serif;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	line-height: 72px;
+	padding-left: 34px;
+	transition: all ease 0.3s;
+	cursor: pointer;
+	float: left;
+	margin: 8px;
+	transition: all ease 0.3s;
+	overflow: hidden;
+}
+.register__form__submit__mark {
+	width: 24px;
+	height: 24px;
+	float: right;
+	position: relative;
+	background-image: url("decals/Arrow Copy 2.png");
+	top: 23px;
+	right: 23px;
+	-moz-transform: rotate(180deg);
+	-ms-transform: rotate(180deg);
+	-webkit-transform: rotate(180deg);
+	transform: rotate(180deg);
+	transition: all ease 0.3s;
+}
+.register__form__submit:hover .register__form__submit__mark  {
+	-moz-transform: rotate(540deg);
+	-ms-transform: rotate(540deg);
+	-webkit-transform: rotate(540deg);
+	transform: rotate(540deg);
+}
+.register__tip {
+	color: black;
+	font: 200 16px/124% CirceWebLight,sans-serif;
+	position: absolute;
+	bottom: 50px;
+	text-align: center;
+	width: 100%;
+}
+.register__tip > span { 
+	width: 60%;
+	display: inline-block;
+}
 
 .footer {
 	background-color: #232323;
@@ -89,14 +320,22 @@
 }
 
 
-@media (min-width:0) and (max-width:800px) {
+@media (max-width:800px) {
 	.wrap { max-width: 480px; }
-	
-	.header { height: 240px; }
 	.header__logo {
 		width: 52px;
 		height: 28px;
+		left: 24px;
+		top: 24px;
 	}
+	.header__donate {
+		left: 24px;
+		bottom: 24px;
+	}
+	.header__menu { display: none; }
+	.header__caption { left: 24px; top: 300px; }
+	.header__caption1 { font-size: 40px; }
+	.header__caption2 { font-size: 24px; }
 	
 	.comission { height: 590px; }
 	.comission__vtip { display: none; }
@@ -109,17 +348,55 @@
 		text-align: center;
 		font: 400 26px/32px CirceWebRegular,sans-serif;
 	}
+	.register { height:500px; }
+	.register__caption { font: 800 30px/134% CirceWebBold,sans-serif; }
+	.register__systems {
+		width: 250px;
+		height: 101px;
+		margin: 0 auto;
+		overflow: hidden;
+	}
+	.register__tip > span { width: 80%; }
+	.register__form { width: 320px; }
+	.register__form__phone { display:none; }
+	.register__form__email { display:none; }
+	.register__form__submit { width: 270px; }
 }
 
 @media (min-width:801px) and (max-width:1000px) {
 	.wrap { max-width: 800px; }
-	.header { height: 400px; }
+	.header__logo {
+		width: 52px;
+		height: 28px;
+		left: 24px;
+		top: 24px;
+	}
+	.header__donate {
+		left: 24px;
+		bottom: 24px;
+	}
+	.header__caption { top: 340px; left: 24px; }
+	.header__caption1 { font-size: 47px; }
+	.header__caption2 { font-size: 26px; }
+	.register__caption { font: 800 35px/134% CirceWebBold,sans-serif; }
+	.register__systems {   width: 785px; }
+	.register__systems__logo { width: 165px; margin: 35px 15px; }
+	.register__tip > span { width: 70%; }
+	.register__form { width: 776px; }
+	.register__form__phone { width: 240px; }
+	.register__form__email { width: 240px; }
+	.register__form__submit { width: 210px; }
 }
 @media (min-width:1001px) and (max-width:1280px) {
 	.wrap { max-width: 1000px; }
-	.header { height: 500px; }
+	.header__caption { top: 280px; }
+	.header__caption1 { font-size: 55px; }
+	.header__caption2 { font-size: 28px; }
+	.register__form { width: 936px; }
+	.register__form__phone { width: 300px; }
+	.register__form__email { width: 300px; }
+	.register__form__submit { width: 250px; }
 }
 @media (min-width:1281px) {
 	.wrap { max-width: 1280px; }
-	.header { height: 640px; }
 }
