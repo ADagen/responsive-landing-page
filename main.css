@@ -168,15 +168,17 @@
 	float: left;
 }
 .comission__percent__number {
-	font: 200 330px/300px BebasNeueBook,sans-serif;
+	font: 200 330px/350px BebasNeueBook,sans-serif;
 	text-align: center;
 	margin-left: 16%;
 	margin-top: 10px;
 }
 .comission__percent__caption {
-	font: 400 20px/30px CirceWebBold,sans-serif;
+	font: 400 20px/160% CirceWebBold,sans-serif;
 	text-align: center;
 	margin-left: 16%;
+	top: -25px;
+	position: relative;
 }
 .comission__about {
 	width: 50%;
