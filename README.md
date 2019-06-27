@@ -1,3 +1,3 @@
 # responsive-landing-page
 
-live demo: https://dagen-niger.github.io/responsive-landing-page/
+live demo: https://adagen.github.io/responsive-landing-page/
